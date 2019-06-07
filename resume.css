@@ -1,0 +1,16 @@
+body{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#top-header{
+
+  width:100%; 
+  height: 100px; 
+  text-align:center; 
+  background-color: gray
+}
+
+#heading{
+
+  padding:15px;
+
+}
