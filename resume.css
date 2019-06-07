@@ -1,16 +1,22 @@
 body{
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  font-family:'Arial Narrow Bold';
+  background: #66a0ff;
 }
 #top-header{
 
   width:100%; 
   height: 100px; 
   text-align:center; 
-  background-color: gray
+  background-color: white;
 }
 
 #heading{
 
   padding:15px;
 
+}
+
+#browsing{
+  
+  font-family:Arial;
 }
