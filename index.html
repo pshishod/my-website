@@ -8,21 +8,53 @@
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type = "text/css" href="./resume.css">
+        <script src="./jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
     </head>
   <body>
-    <div class = "fixed-top" id = "top-header">
+      <div>
+        <div id = "picture">
+                <span class = "border">
+                <img src = "./mypic.jpg" class = "img-fluid" alt = "Responsive image">
+                </span>
+        </div>
+        <div id = "name">
+            <div id = "name1">
+           <h4> Hey,
+            My Name Is </h4><br>
+            <h1>
+            Priyansh Shishodia
+            </h1>
+            <hr>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <div class = "sticky-top" id = "top-header">
         <div id = "heading">
-            <h3>Priyansh Shishodia</h3>
+            <h3><span id = "myName">Priyansh Shishodia</span></h3>
         </div>
         <div class="container">
             <div class = "row justify-content-md-center" style = "font-family: Arial;">
                 
-                <div class = "col col-lg-2">About</div>
-                <div class = "col-md-auto">Resume</div>  
-                <div class = "col col-lg-2">Experience</div>
+                <div class = "col col-lg-2" id = "TopAbout"><a href = "#about" style="color:black">About</a></div>
+                <div class = "col-md-auto" id = "TopResume"><a href = "#resume" style="color: black">Resume</a></div>  
+                <div class = "col col-lg-2" id = "TopExp"><a href = "#exp" style="color:black">Experience</a></div>
             </div>
         </div>
     </div>
+
+    
+
+    <div id = "About">
+            <a name = "about"></a>
+            <h3>About Me </h3>
+            <hr>
+        </div>
+
+    
     <div id = "intro">
         
         
@@ -30,6 +62,145 @@
 
         </h5>
     </div>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    <div id = "Resume">
+            <a name = "resume"></a>
+            <h3> Resume </h3>
+            <hr>
+        </div>
+        hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+    hi<br>
+
+    <div id = "Experience">
+            <a name = "exp"></a>
+            <h3> Experience </h3>
+            <hr>
+        </div>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        hi<br>
+        
+
         <div class = "container" style="padding-top: 225px;">
             <div class = "row justify-content-center" style = "text-align: center;">
             <div class = "col-4">
@@ -49,20 +220,173 @@
         </div>
         </div>
 
-        <div id = "About">
-            <h3>About Me </h3>
-            <hr>
-        </div>
+        
 
-        <div id = "picture">
-            <img src = "./mypic.jpg">
-        </div>
+       
     
     
 
+        <script>
+    
+        
+                $(window).scroll(function() {
+                    var newOne = $('#top-header').offset().top;
+                    var about = $('#About').offset().top;
+                    var resume = $('#Resume').offset().top;
+                    var experience = $('#Experience').offset().top;
+                    if ( $(this).scrollTop() >= newOne ) {
+        
+                        $("#top-header").stop().animate({
+                  backgroundColor: "#ffffff",
+                  color: "#000000",
+                }, 500 );
+                $('#TopAbout').stop().animate({
+                                backgroundColor: "#ffffff",
+                                
+                            }, 500);
+                
+                 $('#TopResume').stop().animate({
+                    backgroundColor: "#ffffff",
+                                
+                }, 500);
+                $('#TopExp').stop().animate({
+                    backgroundColor: "#ffffff",
+                                
+                }, 500);
+                
+        
+        
+                    } else {
+        
+                        $("#top-header").stop().animate({
+                  backgroundColor: "#66a0ff",
+                  color: "#ffffff",
+                }, 500 );
+                $('#TopAbout').stop().animate({
+                                backgroundColor: "#66a0ff",
+                                
+                            }, 500);
+                $('#TopResume').stop().animate({
+                                backgroundColor: "#66a0ff",
+                                
+                            }, 500);
+                $('#TopExp').stop().animate({
+                                backgroundColor: "#66a0ff",
+                                
+                }, 500);
+        
+                        // $("#top-header").animate({
+                        //     backgroundColor: "#66a0ff",
+                        //     color: "white"
+                        // }, 1000);
+                    }
+                    var aboutText = 'About Me';
+                    var nameText = 'Priyansh Shishodia';
+                    var resumeText = 'Resume';
+                    var expText = 'Experience & Projects';
+                    
 
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    if($(this).scrollTop() >= about && ($(this).scrollTop() < resume) && ($(this).scrollTop() < experience)){
+                        if(!($('#myName').text() == aboutText)){
+
+                            $('#myName').stop().animate({
+                                'opacity': 0
+                            }, 500, function(){
+                                $(this).html('About Me').stop().animate({
+                                    'opacity': 1
+                                }, 500);
+                            });
+
+                            $('#TopAbout').stop().animate({
+                                backgroundColor: "#60c8e5",
+                                
+                            }, 100);
+                            $('#TopResume').stop().animate({
+                                backgroundColor: "#ffffff",
+                                
+                            }, 100);
+                            $('#TopExp').stop().animate({
+                                backgroundColor: "#ffffff",
+                                
+                            }, 100);
+
+
+                        }
+                    }
+                    else if($(this).scrollTop() >= resume && ($(this).scrollTop() < experience)){
+                        
+                        if(!($('#myName').text() == resumeText)){
+                            
+
+                            $('#myName').stop().animate({
+                                'opacity': 0
+                            }, 500, function(){
+                                $(this).html('Resume').stop().animate({
+                                    'opacity': 1
+                                }, 500);
+                            });
+
+                            $('#TopAbout').stop().animate({
+                                backgroundColor: "#ffffff",
+                                
+                            }, 100);
+                            $('#TopResume').stop().animate({
+                                backgroundColor: "#60c8e5",
+                                
+                            }, 100);
+                            $('#TopExp').stop().animate({
+                                backgroundColor: "#ffffff",
+                                
+                            }, 100);
+
+
+                        }
+                    }
+                    else if($(this).scrollTop() >= experience){
+                        if(!($('#myName').text() == expText)){
+
+                            $('#myName').stop().animate({
+                                'opacity': 0
+                            }, 500, function(){
+                                $(this).html('Experience & Projects').stop().animate({
+                                    'opacity': 1
+                                }, 500);
+                            });
+
+                            $('#TopAbout').stop().animate({
+                                backgroundColor: "#ffffff",
+                                
+                            }, 100);
+                            $('#TopResume').stop().animate({
+                                backgroundColor: "#ffffff",
+                                
+                            }, 100);
+                            $('#TopExp').stop().animate({
+                                backgroundColor: "#60c8e5",
+                                
+                            }, 100);
+
+
+                        }
+                    }
+                    else{
+                        if(!($('#myName').text() == nameText)){
+
+                        $('#myName').stop().animate({
+                            'opacity': 0
+                        }, 500, function(){
+                            $(this).html('Priyansh Shishodia').stop().animate({
+                                'opacity': 1
+                            }, 500);
+                        });
+
+                        
+                    }
+                }
+                });
+            </script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
