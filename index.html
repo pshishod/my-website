@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <title>
+          Priyansh's Portfolio
+      </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             
@@ -50,117 +53,80 @@
         </div>
     </div>
 
-    
-
     <div id = "About">
-            <a name = "about"></a>
-            <h3>About Me </h3>
-            <hr>
         </div>
+        <br>
+    <a name = "about"></a>
+
+    <div class = "container-fluid" style = "padding-top:150px;">
+            <div class = "row"> 
+     <div class= "col-sm-2"> 
+             
+             <h3> About Me</h3>
+             <hr>
+             
+         </div>
+         </div>
+         </div>
 
     
-    <div id = "intro">
-        
-        
-        <h5>I am currently a sophomore in B.S. for Computer Science from Purdue University, West Lafayette.
-
-        </h5>
-    </div>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    <div id = "Resume">
+        <div class="container-fluid" style = "margin-top:100px; padding-left:20px;">
+                <div class="row">
+                    <div class="col-lg-6">
+                            <h5>I am currently a junior in B.S. for Computer Science studying at Purdue University, West Lafayette. I have worked on several interesting projects,
+                                    ever since my interest for Computer Science
+                                    sparked in 9th grade after messing around with qbasic. I enjoy the critical thinking,
+                                    logical reasoning, and the challenge that comes with dealing with servers and storing and 
+                                    manipulating data.
+                                    I also appreciate the creative freedom involved in working with frontend.
+                        
+                                </h5>
+                    </div>
+                    <div  class="col-lg-6">
+                        <img src = "https://images.pexels.com/photos/247823/pexels-photo-247823.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style = "border-style: solid; border-width: 5px; border-color: white; border-radius: 5px;" class = "img-fluid" alt = "Responsive image">
+                    </div>
+                </div>
+            </div>
+            <div id = "Resume">
+                </div>
+                <br>
             <a name = "resume"></a>
+        
+       <div class = "container-fluid" style = "padding-top:150px;">
+           <div class = "row"> 
+    <div class= "col-sm-2"> 
+            
             <h3> Resume </h3>
             <hr>
+            
         </div>
-        hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
-    hi<br>
+        </div>
+        </div>
 
-    <div id = "Experience">
-            <a name = "exp"></a>
-            <h3> Experience </h3>
-            <hr>
+        <div class=  "container" style = "margin-top:100px; padding-left:20px;">
+            <div class = "row">
+                <div class = "col-lg-12">
+                    <img src = "./resume-australia-2019-summer.jpg" style = "border-style: solid; border-width: 3px; border-color: black" class=  "img-fluid" alt = "Responsive image">
+                </div>
+            </div>
         </div>
+        
+    
+        <div id = "Experience">
+            </div>
+            <br>
+        <a name = "exp"></a>
+    <div class = "container-fluid" style = "padding-top:150px;">
+            <div class = "row"> 
+     <div class= "col-sm-2"> 
+             
+             <h3> Experience </h3>
+             <hr>
+         </div>
+         </div>
+         </div>
+
+    
         hi<br>
         hi<br>
         hi<br>
@@ -231,9 +197,13 @@
     
 
         <script>
+
+
     
         
                 $(window).scroll(function() {
+
+
                     var newOne = $('#top-header').offset().top;
                     var about = $('#About').offset().top;
                     var resume = $('#Resume').offset().top;
@@ -301,24 +271,15 @@
                                     'opacity': 1
                                 }, 500);
                             });
-
-                            $('#TopAbout').stop().animate({
-                                backgroundColor: "#60c8e5",
-                                
-                            }, 100);
-                            $('#TopResume').stop().animate({
-                                backgroundColor: "#ffffff",
-                                
-                            }, 100);
-                            $('#TopExp').stop().animate({
-                                backgroundColor: "#ffffff",
-                                
-                            }, 100);
+                            
 
 
+                        
                         }
+                    
+                        
                     }
-                    else if($(this).scrollTop() >= resume && ($(this).scrollTop() < experience)){
+                    else if(($(this).scrollTop() >= resume) && ($(this).scrollTop() < experience)){
                         
                         if(!($('#myName').text() == resumeText)){
                             
@@ -331,19 +292,7 @@
                                 }, 500);
                             });
 
-                            $('#TopAbout').stop().animate({
-                                backgroundColor: "#ffffff",
-                                
-                            }, 100);
-                            $('#TopResume').stop().animate({
-                                backgroundColor: "#60c8e5",
-                                
-                            }, 100);
-                            $('#TopExp').stop().animate({
-                                backgroundColor: "#ffffff",
-                                
-                            }, 100);
-
+                          
 
                         }
                     }
@@ -358,18 +307,6 @@
                                 }, 500);
                             });
 
-                            $('#TopAbout').stop().animate({
-                                backgroundColor: "#ffffff",
-                                
-                            }, 100);
-                            $('#TopResume').stop().animate({
-                                backgroundColor: "#ffffff",
-                                
-                            }, 100);
-                            $('#TopExp').stop().animate({
-                                backgroundColor: "#60c8e5",
-                                
-                            }, 100);
 
 
                         }
